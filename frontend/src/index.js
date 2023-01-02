@@ -9,6 +9,7 @@ import DailyLogTable from './Pages/DailyLogTable';
 import { UserProfile } from './Pages/UserProfile';
 import { userLoader } from './component/utils';
 import WeeklyTable from './Pages/WeeklyTable';
+import BlankPage from './Pages/BlankPage';
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
         path: ':id',
         element: <UserProfile />,
       },
+      {
+        path: '',
+        element: < BlankPage />,
+      }
     ],
   },
 ]);
